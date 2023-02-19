@@ -52,7 +52,7 @@ jobs:
                  # runners optimisations
                  [[ ${{ inputs.desktop }} == no ]]  && runner_tags=small
                  [[ ${{ inputs.minimal }} == yes ]] && runner_tags=ubuntu-latest
-                 [[ $j == arm* ]]                   && runner_tags=aarch64
+                 [[ $j == arm64 ]]                   && runner_tags=aarch64
                  
                  
                  for k in ${desktops[@]}; do
