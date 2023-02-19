@@ -5,7 +5,7 @@ on:
 
 jobs:
 
-  MIN:
+  Minimal:
 
     if: ${{ success() && github.repository_owner == 'Armbian' }}
     uses: ./.github/workflows/script.yml
@@ -14,5 +14,16 @@ jobs:
     with:
 
       minimal: 'yes'
+      desktop: 'no'
+      variant: ''
+
+  Server:
+
+    if: ${{ success() && github.repository_owner == 'Armbian' }}
+    uses: ./.github/workflows/script.yml
+
+    with:
+
+      minimal: 'no'
       desktop: 'no'
       variant: ''
