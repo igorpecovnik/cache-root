@@ -24,7 +24,7 @@ jobs:
 
     needs: Cancel
     if: ${{ success() && github.repository_owner == 'Armbian' }}
-    uses: ./.github/workflows/generate.yml
+    uses: ./.github/workflows/include.yml
 
     with:
 
@@ -36,7 +36,7 @@ jobs:
 
     needs: Cancel
     if: ${{ success() && github.repository_owner == 'Armbian' }}
-    uses: ./.github/workflows/generate.yml
+    uses: ./.github/workflows/include.yml
 
     with:
 
@@ -48,7 +48,7 @@ jobs:
 
     needs: Cancel
     if: ${{ success() && github.repository_owner == 'Armbian' }}
-    uses: ./.github/workflows/generate.yml
+    uses: ./.github/workflows/include.yml
 
     with:
 
@@ -60,7 +60,7 @@ jobs:
 
     needs: Cancel
     if: ${{ success() && github.repository_owner == 'Armbian' }}
-    uses: ./.github/workflows/generate.yml
+    uses: ./.github/workflows/include.yml
 
     with:
 
@@ -72,7 +72,7 @@ jobs:
 
     needs: Cancel
     if: ${{ success() && github.repository_owner == 'Armbian' }}
-    uses: ./.github/workflows/generate.yml
+    uses: ./.github/workflows/include.yml
 
     with:
 
@@ -84,7 +84,7 @@ jobs:
 
     needs: Cancel
     if: ${{ success() && github.repository_owner == 'Armbian' }}
-    uses: ./.github/workflows/generate.yml
+    uses: ./.github/workflows/include.yml
 
     with:
 
@@ -96,7 +96,7 @@ jobs:
 
     needs: Cancel
     if: ${{ success() && github.repository_owner == 'Armbian' }}
-    uses: ./.github/workflows/generate.yml
+    uses: ./.github/workflows/include.yml
 
     with:
 
