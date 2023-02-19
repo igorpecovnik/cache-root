@@ -8,7 +8,7 @@ jobs:
   Minimal:
 
     if: ${{ success() && github.repository_owner == 'Armbian' }}
-    uses: ./.github/workflows/script.yml
+    uses: ./.github/workflows/generate.yml
     secrets: inherit
 
     with:
@@ -20,7 +20,7 @@ jobs:
   Server:
 
     if: ${{ success() && github.repository_owner == 'Armbian' }}
-    uses: ./.github/workflows/script.yml
+    uses: ./.github/workflows/generate.yml
 
     with:
 
