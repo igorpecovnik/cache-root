@@ -1,4 +1,4 @@
-name: Rootfs cache
+name: Reusable
 
 on:
   workflow_dispatch:
