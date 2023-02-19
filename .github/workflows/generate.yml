@@ -1,7 +1,7 @@
 name: Reusable
 
 on:
-  workflow_dispatch:
+
   workflow_call:
     inputs:
       minimal:
