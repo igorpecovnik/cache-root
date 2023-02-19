@@ -9,7 +9,6 @@ jobs:
 
     if: ${{ success() && github.repository_owner == 'Armbian' }}
     uses: ./.github/workflows/generate.yml
-    secrets: inherit
 
     with:
 
@@ -27,3 +26,58 @@ jobs:
       minimal: 'no'
       desktop: 'no'
       variant: ''
+
+  GUI1:
+
+    if: ${{ success() && github.repository_owner == 'Armbian' }}
+    uses: ./.github/workflows/generate.yml
+
+    with:
+
+      minimal: 'no'
+      desktop: 'yes'
+      variant: 'x'
+      
+  GUI2:
+
+    if: ${{ success() && github.repository_owner == 'Armbian' }}
+    uses: ./.github/workflows/generate.yml
+
+    with:
+
+      minimal: 'no'
+      desktop: 'yes'
+      variant: '3dsupport'
+
+  GUI3:
+
+    if: ${{ success() && github.repository_owner == 'Armbian' }}
+    uses: ./.github/workflows/generate.yml
+
+    with:
+
+      minimal: 'no'
+      desktop: 'yes'
+      variant: '3dsupport browsers'
+
+  GUI4:
+
+    if: ${{ success() && github.repository_owner == 'Armbian' }}
+    uses: ./.github/workflows/generate.yml
+
+    with:
+
+      minimal: 'no'
+      desktop: 'yes'
+      variant: '3dsupport browsers chat desktop_tools editors email internet multimedia office programming remote_desktop'    
+      
+  GUI5:
+
+    if: ${{ success() && github.repository_owner == 'Armbian' }}
+    uses: ./.github/workflows/generate.yml
+
+    with:
+
+      minimal: 'no'
+      desktop: 'yes'
+      variant: 'browsers chat desktop_tools editors email internet multimedia office programming remote_desktop'
