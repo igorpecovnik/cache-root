@@ -1,8 +1,11 @@
 name: Rootfs
 on:
+
   workflow_dispatch:
   workflow_call:
-
+  schedule:
+    - cron: '0 3 * * *' # Scheduled runs every day at 3am UTC
+    
 jobs:
 
   Minimal:
