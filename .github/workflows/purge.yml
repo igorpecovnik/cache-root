@@ -1,0 +1,16 @@
+name: package cleanup
+on:
+  push:
+
+jobs:
+  fail_purging_semantic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clean packages
+        uses: MobileheadHolding/github-action-purge-packages@master
+        with:
+          owner: armbian
+          repo: cache-root
+          version-regex: 'cache*'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
