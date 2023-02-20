@@ -14,4 +14,4 @@ jobs:
           type: container
           keep: 0
           names: |
-           rootfs-armhf-bookworm-xfce
+           rootfs-arm64-lunar-xfce
