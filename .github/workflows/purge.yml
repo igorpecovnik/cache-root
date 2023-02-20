@@ -15,4 +15,3 @@ jobs:
           keep: 0
           names: |
            rootfs-armhf-bookworm-xfce
-           cache-kernelkernel-bcm2711-edge
