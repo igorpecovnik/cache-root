@@ -14,4 +14,5 @@ jobs:
           type: container
           keep: 0
           names: |
-            cache/uboot-nanopineo-current 
+           rootfs-armhf-bookworm-xfce
+           cache-kernelkernel-bcm2711-edge
