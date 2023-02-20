@@ -9,7 +9,7 @@ jobs:
       - name: clean packages
         uses: smartsquaregmbh/delete-old-packages@v0.6.0
         with:
-          token: ${{ secrets.GH_ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           organization: armbian
           type: container
           keep: 0
