@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clean packages
-        uses: MobileheadHolding/github-action-purge-packages@master
+        uses: smartsquaregmbh/delete-old-packages@v0.6.0
         with:
-          owner: armbian
-          repo: cache-root
-          version-regex: '*'
-          days-old: 1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_ACCESS_TOKEN }}
+          organization: armbian
+          type: container
+          keep: 0
+          names: |
+            root
