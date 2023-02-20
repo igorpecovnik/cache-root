@@ -14,4 +14,4 @@ jobs:
           type: container
           keep: 0
           names: |
-            root
+            cache-rootrootfs-arm64-jammy-cinnamon
