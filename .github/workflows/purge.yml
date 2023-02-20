@@ -11,6 +11,7 @@ jobs:
         with:
           owner: armbian
           repo: cache-root
-          version-regex: 'cache*'
+          version-regex: '*'
+          days-old: 0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
